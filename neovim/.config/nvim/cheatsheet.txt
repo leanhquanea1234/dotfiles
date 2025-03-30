@@ -1,0 +1,51 @@
+# i hate my life
+
+## spices-of-life
+Close current buffer | <leader>x
+Open nvim cmd | ;
+Turn back to normal mode | jk 
+Code format | <leader>cf
+Harpoon | <c-m>
+
+## generals
+Window split vertical |  <leader>wv
+Window split horizonal |  <leader>wh
+Indent left in visual mode | <
+Indent right in visual mode | >
+
+## LSP
+Code documentation | <leader>ch
+Code definition | <leader>cd
+Code action | <leader>ca
+Code references | <leader>cr
+Code implementations | <leader>ci
+Code rename | <leader>cR
+Code decaration | <leader>cD
+
+## nvim-tree
+Toggle nvim tree | <c-n>
+Create file | a
+Delete file | d
+Cut | x
+Copy | c
+Parse | p
+Open popup | s
+
+## springboot-nvim
+Run springboot | <leader>Jr
+Create class | <leader>Jc
+Create interface | <leader>Ji
+Create enum | <leader>Je
+
+## jdtls
+Organize imports | <leader>Jo
+Extract variable | <leader>Jv
+Extact constant | <leader>JC
+Run test method | <leader>Jt
+Run test class | <leader>JT
+Update config | <leader>Ju
+
+## debugger
+Toggle breakpoint | <leader>dt
+Start debugger | <leader>ds
+Close debugger | <leader>dc
