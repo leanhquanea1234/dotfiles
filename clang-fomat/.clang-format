@@ -1,0 +1,64 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM  # Clean base style
+AccessModifierOffset: -2  # Align 'public:'/'private:' with class
+AlignAfterOpenBracket: Align  # Align parameters after '('
+AlignConsecutiveMacros: true  # Align macros
+# AlignConsecutiveAssignments: true  # Align '=' in variable declarations
+AlignEscapedNewlines: Right  # Align line-continuation slashes
+AlignOperands: Align  # Align multi-line expressions
+AlignTrailingComments: true  # Keep comments aligned
+AllowAllArgumentsOnNextLine: false  # Force 1-per-line for long args
+AllowAllConstructorInitializersOnNextLine: false  # Force 1-per-line for init lists
+AllowShortBlocksOnASingleLine: Never  # Always expand {} blocks
+AllowShortCaseLabelsOnASingleLine: false  # Case labels on new lines
+AllowShortFunctionsOnASingleLine: Inline  # Only collapse empty functions
+AllowShortIfStatementsOnASingleLine: true  # Always expand if {}
+AllowShortLoopsOnASingleLine: false  # Always expand loops
+AlwaysBreakAfterDefinitionReturnType: None  # Return type on same line
+AlwaysBreakAfterReturnType: None  # K&R style return types
+AlwaysBreakBeforeMultilineStrings: true  # Break long strings
+# BinPackArguments: false  # Don't pack args (1-per-line)
+# BinPackParameters: false  # Don't pack params (1-per-line)
+BreakBeforeBinaryOperators: NonAssignment  # Break before +, -, etc.
+BreakBeforeBraces: Attach 
+BreakBeforeTernaryOperators: true  # Break before ? :
+BreakConstructorInitializers: BeforeColon  # Constructor init on new line
+ColumnLimit: 100  # Max line length (adjust as needed)
+CompactNamespaces: false  # Don't collapse namespaces
+ConstructorInitializerAllOnOneLineOrOnePerLine: true  # Force 1-per-line
+ContinuationIndentWidth: 2  # Indent for wrapped lines
+Cpp11BracedListStyle: true  # Use {} for init lists
+DerivePointerAlignment: false  # Explicit pointer alignment
+FixNamespaceComments: true  # Fix namespace end comments
+IncludeBlocks: Regroup  # Logical include grouping
+IndentCaseLabels: true  # Indent 'case' inside switch
+IndentPPDirectives: AfterHash  # Indent #if/#else
+IndentWidth: 2  # Spaces for indentation
+KeepEmptyLinesAtTheStartOfBlocks: false  # No extra blank lines
+MaxEmptyLinesToKeep: 1  # Max consecutive blank lines
+NamespaceIndentation: None  # No extra namespace indent
+PointerAlignment: Right  # char *var (not char* var)
+ReflowComments: true  # Reformat comments
+SortIncludes: true  # Sort #includes
+SortUsingDeclarations: true  # Sort 'using' statements
+SpaceAfterCStyleCast: true  # Add space after (type)
+SpaceAfterLogicalNot: false  # No space after '!'
+SpaceAfterTemplateKeyword: true  # 'template <' (not 'template<')
+SpaceBeforeAssignmentOperators: true  # 'x = 5' (not 'x=5')
+SpaceBeforeCpp11BracedList: true  # 'vector<int>{1, 2}'
+SpaceBeforeCtorInitializerColon: true  # ' : member()'
+SpaceBeforeInheritanceColon: true  # ' : public Base'
+SpaceBeforeParens: ControlStatements  # 'if (' (not 'if(')
+SpaceBeforeRangeBasedForLoopColon: true  # 'for (auto x : range)'
+SpaceBeforeSquareBrackets: false  # 'array[0]' (not 'array [0]')
+SpacesInAngles: Never  # 'vector<int>' (not 'vector< int >')
+SpacesInConditionalStatement: false  # 'x?1:2' (not 'x ? 1 : 2')
+SpacesInContainerLiterals: false  # 'vector{1, 2}' (not 'vector{ 1, 2 }')
+SpacesInCStyleCastParentheses: false  # '(int)x' (not '( int )x'
+SpacesInParentheses: false  # 'func(1)' (not 'func( 1 )')
+SpacesInSquareBrackets: false  # 'array[0]' (not 'array[ 0 ]')
+Standard: Latest  # C++20/C17 by default
+TabWidth: 2  # For '\t' consistency
+UseTab: Never  # Always use spaces
+...
