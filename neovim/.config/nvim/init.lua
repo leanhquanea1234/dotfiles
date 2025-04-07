@@ -28,6 +28,37 @@ local opts = {
 		notify = false,
 	},
 }
+-- CLIPBOARD
+vim.opt.clipboard = "unnamedplus"  -- Use system clipboard for yank/paste
+
+-- Fallback to xclip/xsel if wl-copy is not available
+if vim.fn.executable('wl-copy') == 1 then
+  vim.g.clipboard = {
+    name = 'wl-clipboard',
+    copy = {
+      ["+"] = 'wl-copy --foreground --type text/plain',
+      ["*"] = 'wl-copy --foreground --primary --type text/plain',
+    },
+    paste = {
+      ["+"] = 'wl-paste --no-newline',
+      ["*"] = 'wl-paste --no-newline --primary',
+    },
+    cache_enabled = true,
+  }
+elseif vim.fn.executable('xclip') == 1 then
+  vim.g.clipboard = {
+    name = 'xclip',
+    copy = {
+      ["+"] = 'xclip -selection clipboard',
+      ["*"] = 'xclip -selection primary',
+    },
+    paste = {
+      ["+"] = 'xclip -selection clipboard -o',
+      ["*"] = 'xclip -selection primary -o',
+    },
+    cache_enabled = true,
+  }
+end
 
 require("config.options") -- load /config/options.lua
 require("config.keymaps")
